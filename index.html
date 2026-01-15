@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Assignment 11</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: linear-gradient(135deg, #ececec, #9fd3c7);">
+
+    <center><h1>Js Assignment 11 [Events]</h1></center>
+
+<section>
+  <h2>Alert on Link Click</h2>
+  <a href="#" onclick="showAlert()">Click Me</a>
+</section>
+
+<section>
+  <h2>Mobile Purchase</h2>
+  <div class="images">
+    <img src="https://buy.gazelle.com/cdn/shop/files/iPhone_14_-_Black_-_Overlap_Trans-cropped_9fb61e04-9868-4c54-ac7b-8050ccba8d84.jpg?v=1757425762" onclick="showMsg('')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmlp0DZDgk0BP4b5E0sF440bLM6H5JcCKmqQ&s" onclick="showMsg('')">
+    <img src="https://images.priceoye.pk/oppo-a6-pakistan-priceoye-2b09q-270x270.webp" onclick="showMsg('')">
+    <img src="https://cellmart.pk/wp-content/uploads/2026/01/Redmi-Note-15-green-cellmart-350x350.webp" onclick="showMsg('')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQz3Sw7_EkDZCkR8PdwCXzzb-dZI-lg-HINA&s" onclick="showMsg('')">
+    <img src="https://www.pakmobizone.pk/wp-content/uploads/2024/03/Infinix-Note-40-Titan-Gold-1.jpeg" onclick="showMsg('')">
+    <img src="https://mobilo.pk/wp-content/uploads/2025/07/Realme-C71-Forest-sawan-price-in-pakistan-mobilo.webp" onclick="showMsg('')">
+
+
+  </div>
+</section>
+
+<section>
+  <h2>Student Records</h2>
+  <table id="studentTable">
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>0</td><td>Ali</td><td>10</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>1</td><td>Ahmed</td><td>9</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td><td>Asif</td><td>11</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>3</td><td>Shayan</td><td>12</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>4</td><td>Haider</td><td>7</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>5</td><td>Uzair</td><td>8</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>6</td><td>Muzammil</td><td>5</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>7</td><td>Usman</td><td>6</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+     <tr>
+      <td>8</td><td>Ahsan</td><td>9</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Image Hover Effect</h2>
+ <center><img src="images/s.png" id="hoverImg" onmouseover="changeImage()" onmouseout="resetImage()"></center> 
+</section>
+
+<section>
+  <h2>Counter</h2>
+  <div class="counter-box">
+    <button onclick="decrease()">-</button>
+    <span id="counter">0</span>
+    <button onclick="increase()">+</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
